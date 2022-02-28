@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+
+img{
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+body{
+    max-width: 100%;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 2px rgb(226, 225, 225);
+    
+    height: 50px;
+}
+.tete {
+   
+   display: flex;
+   margin-left:10%;
+   height: 40px;
+  
+}
+.tete a{
+    text-decoration: none;
+}
+
+
+ .button button{
+        border: 2px solid rgb(40, 88, 245);
+        border-radius: 5px;
+        color : white;
+        background-color: rgb(40, 88, 245);
+        display: inline-block;
+        line-height: 1;
+        font-family: arial;
+        font-size: 14px;
+        cursor: pointer;
+        height: 40px;
+        width: 180px;
+       
+ }
+ button.button1 {
+     background-color: white;
+     border: none;
+     border-radius: 5px;
+     padding: 5px 15px;
+
+     
+ } 
+ button.button2{
+    background-color: white;
+    border: none;
+     border-radius: 5px;
+     padding: 5px 15px;
+} 
+button span{
+    display: none;
+}
+.gallerieimg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.un {
+    grid-column: 1 / span 2;
+}
+ 
+.prdtprix p{
+    color:gray;
+}
+.button{
+    display: flex;
+    justify-content: center;
+
+}
+.tete span{
+    color:black;
+}
+.menu-logo img{
+    margin-right: 10px;
+}
+ 
+ 
+   
+/*appareil*/
+@media screen and (min-width: 361px){
+    .gallerieimg {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .un {
+        grid-column: 1 / span 2;
+    }
+     
+    .conteneur{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+    }
+    button.button1{
+     border: 2px solid rgb(192, 190, 190);
+    }
+    button.button2{
+      border : 2px solid rgb(192, 190, 190);
+    }
+    button span{
+        display: inline;
+        font-weight: bold;
+        
+    }
+    
+
+   
+}  
+
+/*Disktop*/
+@media screen and (min-width: 1000px){
+    
+.tete{
+   display: flex;
+   justify-content: right;
+   width: 62%;
+  
+   
+    }
+    .button{
+        display:flex;
+        justify-content: left;
+        margin-top: 40px;
+    }
+}
